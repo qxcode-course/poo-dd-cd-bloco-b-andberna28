@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-06_19-39-17",
+            "content": "@@ -298,16 +298,20 @@\n o a%C3%AD%22)%0A%0A\n+    \n while Tr\n@@ -314,16 +314,20 @@\n e True:%0A\n+    \n     chin\n",
+            "lines": "12"
+        },
+        {
+            "label": "2025-10-06_19-40-03",
+            "content": "@@ -302,18 +302,18 @@\n %22)%0A%0A\n-def main()\n+while True\n :%0A  \n@@ -338,32 +338,4 @@\n a()%0A\n-    while True:%0A    %0Amain()%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2025-10-06_19-41-48",
+            "content": "@@ -298,17 +298,32 @@\n o a%C3%AD%22)%0A%0A\n-%0A\n+def main():%0A    \n chinela \n@@ -336,29 +336,34 @@\n ela(\n-input())%0Aprint(chinela\n+)%0A    while True:%0A    %0Amain(\n )%0A\n-%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2025-10-06_19-42-19",
+            "content": "class Chinela:\n    def __init__(self, tamanho:int = 0):\n        self.__tamanho = 0\n    \n    def setTamanho(self):\n        if self.__tamanho >= 20 and self.__tamanho <= 50 and self.__tamanho % 2 == 0:\n            print(self.__tamanho)\n        else:\n            print(\"pode n\u00e3o paiz\u00e3o, t\u00e1 errado isso a\u00ed\")\n\n\nchinela = Chinela(input())\nprint(chinela)\n\n",
+            "lines": "14"
+        }
+    ]
+}
