@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-06_21-20-48",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho: str = \"\"\n\n    def getTamanho(self) -> str:\n        return self.__tamanho\n    \n    def setTamanho(self, valor: str):\n        if valor == \"PP\" or valor == \"P\" or valor == \"M\" or valor == \"G\" or valor == \"GG\" or valor == \"XG\":\n            self.__tamanho = valor\n        else:\n            print(\"T\u00e1 louco pai? T\u00e1 metendo o louco? S\u00f3 tem 'PP', 'P', 'M' e 'G', 'GG' e 'XG'\")\n\ncamisa = Camisa()\nwhile camisa.getTamanho() == \"\":\n    print(\"Digite seu tamanho de roupa\")\n    tamanho = input()\n    camisa.setTamanho(tamanho)\n\nprint(\"Parab\u00e9ns, voc\u00ea comprou uma camisa tamanho: \", camisa.getTamanho())",
+            "lines": "20"
+        }
+    ]
+}

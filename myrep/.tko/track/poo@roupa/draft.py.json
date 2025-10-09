@@ -27,8 +27,33 @@
         },
         {
             "label": "2025-10-06_20-05-58",
-            "content": "class Roupa:\n    def __init__(self, tamanho: str = \"\"):\n        self.tamanho: str = tamanho\n\n    def __str__(self):\n        return f\"size: ({self.tamanho})\"\n\n    def setTamanho(self):\n        if self.tamanho == \"PP\" and self.tamanho == \"P\" and self.tamanho == \"M\" and self.tamanho == \"G\" and self.tamanho == \"GG\" and self.tamanho == \"XG\":\n            return self.tamanho\n\n\n\ndef main():\n    roupa = Roupa()\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"size\":\n            roupa.tamanho()\n        elif args[0] == \"show\":\n            print(roupa)\n\nmain()",
+            "content": "@@ -23,24 +23,43 @@\n _init__(self\n+, tamanho: str = %22%22\n ):%0A        s\n@@ -77,18 +77,23 @@\n : str = \n-%22%22\n+tamanho\n %0A%0A    de\n@@ -178,20 +178,8 @@\n self\n-, valor: str\n ):%0A \n@@ -192,95 +192,142 @@\n  if \n-valor == %22PP%22 or valor == %22P%22 or valor == %22M%22 or valor == %22G%22 or valor == %22GG%22 or valor\n+self.tamanho == %22PP%22 and self.tamanho == %22P%22 and self.tamanho == %22M%22 and self.tamanho == %22G%22 and self.tamanho == %22GG%22 and self.tamanho\n  == \n@@ -336,32 +336,39 @@\n G%22:%0A            \n+return \n self.tamanho = v\n@@ -367,52 +367,8 @@\n anho\n- = valor%0A        else:%0A            print(%22%22)\n %0A%0A%0A%0A\n",
             "lines": "27"
+        },
+        {
+            "label": "2025-10-06_21-22-03",
+            "content": "@@ -131,72 +131,8 @@\n )%22%0A%0A\n-    def getTamanho(self) -%3E str:%0A        return self.__tamanho%0A%0A\n     \n@@ -590,11 +590,9 @@\n upa.\n-seT\n+t\n aman\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-06_21-22-32",
+            "content": "@@ -636,38 +636,8 @@\n e%22:%0A\n-            tamanho = args%5B1%5D%0A\n     \n@@ -652,25 +652,24 @@\n roupa.se\n-t\n Tamanho(\n tamanho)\n@@ -660,23 +660,16 @@\n Tamanho(\n-tamanho\n )%0A      \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-06_21-24-49",
+            "content": "@@ -377,18 +377,16 @@\n %0A       \n- #\n  else:%0A \n@@ -395,24 +395,20 @@\n     \n- #\n     \n- #\n  print(%22\n fail\n@@ -407,59 +407,12 @@\n nt(%22\n-fail: Valor inv%C3%A1lido, tente PP, P, M, G, GG ou XG\n %22)\n+%0A%0A\n %0A%0Ade\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-06_21-26-10",
+            "content": "@@ -39,26 +39,24 @@\n        self.\n-__\n tamanho: str\n@@ -111,26 +111,24 @@\n ize: (%7Bself.\n-__\n tamanho%7D)%22%0A%0A\n@@ -350,26 +350,24 @@\n        self.\n-__\n tamanho = va\n@@ -377,16 +377,18 @@\n %0A       \n+ #\n  else:%0A \n@@ -390,27 +390,31 @@\n se:%0A        \n+#\n    \n+  #\n  print(%22fail\n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-10-09_13-58-58",
+            "content": "class Roupa:\n    def __init__(self):\n        self.__tamanho: str = \"\"\n\n    def __str__(self):\n        return f\"size: ({self.__tamanho})\"\n\n    def getTamanho(self) -> str:\n        return self.__tamanho\n\n    def setTamanho(self, valor: str):\n        if valor == \"PP\" or valor == \"P\" or valor == \"M\" or valor == \"G\" or valor == \"GG\" or valor == \"XG\":\n            self.__tamanho = valor\n        else:\n            print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\n\ndef main():\n    roupa = Roupa()\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"size\":\n            tamanho = args[1]\n            roupa.setTamanho(tamanho)\n        elif args[0] == \"show\":\n            print(roupa)\n\nmain()",
+            "lines": "31"
         }
     ]
 }
