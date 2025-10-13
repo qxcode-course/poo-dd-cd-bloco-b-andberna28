@@ -1,0 +1,30 @@
+2025-10-11 20:42:03, MOVE, v:1, k:poo@relogio, mode:DOWN
+2025-10-11 20:52:24, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-11 20:52:25, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:25
+2025-10-11 20:53:15, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:27
+2025-10-11 20:55:44, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:27
+2025-10-11 20:57:24, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:33
+2025-10-11 20:59:03, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:38
+2025-10-11 21:00:37, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:43
+2025-10-11 21:00:58, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:43
+2025-10-11 21:01:52, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:43
+2025-10-11 21:02:33, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7
+2025-10-11 21:04:35, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:49
+2025-10-11 21:05:02, EXEC, v:1, k:poo@relogio, mode:FULL, rate:15, size:46
+2025-10-11 21:05:28, EXEC, v:1, k:poo@relogio, mode:FULL, rate:15, size:43
+2025-10-11 21:05:54, EXEC, v:1, k:poo@relogio, mode:FULL, rate:30, size:43
+2025-10-11 21:06:20, EXEC, v:1, k:poo@relogio, mode:FULL, rate:30, size:46
+2025-10-11 21:10:28, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:45
+2025-10-11 21:11:00, EXEC, v:1, k:poo@relogio, mode:FULL, rate:30, size:46
+2025-10-11 21:11:21, EXEC, v:1, k:poo@relogio, mode:FULL, rate:30, size:46
+2025-10-11 21:11:43, EXEC, v:1, k:poo@relogio, mode:FULL, rate:23, size:46
+2025-10-11 21:12:41, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:52
+2025-10-11 21:12:55, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:47
+2025-10-11 21:13:03, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:46
+2025-10-11 21:13:13, EXEC, v:1, k:poo@relogio, mode:FULL, rate:30, size:46
+2025-10-11 21:13:57, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:46
+2025-10-11 21:14:03, EXEC, v:1, k:poo@relogio, mode:FULL, rate:30, size:46
+2025-10-11 21:15:08, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:45
+2025-10-11 21:15:35, EXEC, v:1, k:poo@relogio, mode:FULL, rate:30, size:46
+2025-10-11 21:15:42, EXEC, v:1, k:poo@relogio, mode:FULL, rate:30, size:46
+2025-10-11 21:16:21, EXEC, v:1, k:poo@relogio, mode:FULL, rate:30, size:46
