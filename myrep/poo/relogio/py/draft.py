@@ -19,36 +19,29 @@ class Watch:
     def get_segundo(self) -> int:
         return self.__segundo
 
-    def set_hora(self, hora: int) -> bool:
-        if hora in range(24):
-            self.__hora = hora
-            return True
-        else:
+    def set_hora(self, hora: int) -> None:
+        if not (0 <= hora <= 23):
             print("fail: hora invalida")
             return False
-            
-        # if not (0 <= hora <= 23):
-        #     print("fail: hora invalida")
-        #     return False
-        # self.__hora = hora
-        # return True
+        self.__hora = hora
+        return True
 
     def set_minuto(self, minuto: int) -> None:
-        if not (0 <= minuto <= 60):
+        if not (0 <= minuto <= 59):
             print("fail: minuto invalido")
             return False
         self.__minuto = minuto
         return True
 
     def set_segundo(self, segundo: int) -> None:
-        if not (0 <= segundo <= 60):
+        if not (0 <= segundo <= 59):
             print("fail: segundo invalido")
             return False
         self.__segundo = segundo
         return True
 
-    def nextSecond(self):
-        self.__segundo += 1
+    def nextSecond(self, increment: int = 1):
+        self.__segundo += increment
         if self.__segundo > 59:
             self.__segundo = 0
             self.__minuto += 1
@@ -66,16 +59,26 @@ def main():
         args: list[str] = line.split(" ")
         if args[0] == "end":
             break
-        elif args[0] in ["init", "set"]:
+        elif args[0] == "set":
             hora = int(args[1])
             minuto = int(args[2])
             segundo = int(args[3])
             relogio.set_hora(hora)
             relogio.set_minuto(minuto)
             relogio.set_segundo(segundo)
+        elif args[0] == "init":
+            hora = int(args[1])
+            minuto = int(args[2])
+            segundo = int(args[3])
+            relogio = Watch(hora, minuto, segundo)
         elif args[0] == "next":
-            relogio.nextSecond()
+            if len(args) == 1:
+                relogio.nextSecond()
+            else:
+                increment = int(args[1])
+                relogio.nextSecond(increment)
         elif args[0] == "show":
             print(relogio)
+        
     
 main()
