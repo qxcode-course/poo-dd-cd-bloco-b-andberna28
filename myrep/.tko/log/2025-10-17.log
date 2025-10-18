@@ -1,0 +1,10 @@
+2025-10-17 15:53:16, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-17 15:53:17, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:39
+2025-10-17 15:56:22, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:42
+2025-10-17 15:56:45, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:43
+2025-10-17 15:57:35, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:43
+2025-10-17 15:57:58, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:43
+2025-10-17 15:58:08, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:43
+2025-10-17 15:58:30, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:43
+2025-10-17 15:58:39, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:43
+2025-10-17 16:01:40, EXEC, v:1, k:poo@motoca, mode:FULL, rate:6, size:44
