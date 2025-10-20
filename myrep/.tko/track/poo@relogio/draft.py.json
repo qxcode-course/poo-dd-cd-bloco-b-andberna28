@@ -462,6 +462,16 @@
         },
         {
             "label": "2025-10-14_19-06-10",
+            "content": "@@ -1807,34 +1807,32 @@\n %5B3%5D)%0A           \n- #\n  relogio.set_hor\n@@ -1842,34 +1842,32 @@\n ora)%0A           \n- #\n  relogio.set_min\n@@ -1893,10 +1893,8 @@\n     \n- #\n  rel\n",
+            "lines": "84"
+        },
+        {
+            "label": "2025-10-18_16-32-22",
+            "content": "@@ -1807,32 +1807,34 @@\n %5B3%5D)%0A           \n+ #\n  relogio.set_hor\n@@ -1844,32 +1844,34 @@\n ora)%0A           \n+ #\n  relogio.set_min\n@@ -1885,32 +1885,34 @@\n uto)%0A           \n+ #\n  relogio.set_seg\n",
+            "lines": "84"
+        },
+        {
+            "label": "2025-10-18_16-32-36",
             "content": "class Watch:\n    def __init__(self, hora: int = 0, minuto: int = 0, segundo: int = 0):\n        self.__hora = 0\n        self.__minuto = 0\n        self.__segundo = 0\n        self.set_hora(hora)\n        self.set_minuto(minuto)\n        self.set_segundo(segundo)\n\n    def __str__(self):\n        return f\"{self.__hora:02d}:{self.__minuto:02d}:{self.__segundo:02d}\"\n    \n    def get_hora(self) -> int:\n        return self.__hora\n    \n    def get_minuto(self) -> int:\n        return self.__minuto\n    \n    def get_segundo(self) -> int:\n        return self.__segundo\n\n    def set_hora(self, hora: int) -> None:\n        if not (0 <= hora <= 23):\n            print(\"fail: hora invalida\")\n            return False\n        self.__hora = hora\n        return True\n\n    def set_minuto(self, minuto: int) -> None:\n        if not (0 <= minuto <= 59):\n            print(\"fail: minuto invalido\")\n            return False\n        self.__minuto = minuto\n        return True\n\n    def set_segundo(self, segundo: int) -> None:\n        if not (0 <= segundo <= 59):\n            print(\"fail: segundo invalido\")\n            return False\n        self.__segundo = segundo\n        return True\n\n    def nextSecond(self, increment: int = 1):\n        self.__segundo += increment\n        if self.__segundo > 59:\n            self.__segundo = 0\n            self.__minuto += 1\n        if self.__minuto > 59:\n            self.__minuto = 0\n            self.__hora += 1\n        if self.__hora > 23:\n            self.__hora = 0\n\ndef main():\n    relogio = Watch()\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"set\":\n            hora = int(args[1])\n            minuto = int(args[2])\n            segundo = int(args[3])\n            relogio.set_hora(hora)\n            relogio.set_minuto(minuto)\n            relogio.set_segundo(segundo)\n        elif args[0] == \"init\":\n            hora = int(args[1])\n            minuto = int(args[2])\n            segundo = int(args[3])\n            relogio = Watch(hora, minuto, segundo)\n        elif args[0] == \"next\":\n            if len(args) == 1:\n                relogio.nextSecond()\n            else:\n                increment = int(args[1])\n                relogio.nextSecond(increment)\n        elif args[0] == \"show\":\n            print(relogio)\n        \n    \nmain()\n",
             "lines": "84"
         }
