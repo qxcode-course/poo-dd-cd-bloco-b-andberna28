@@ -8,7 +8,7 @@ sources:
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: C:\Users\User\Documents\Faculdade\poo-dd-cd-bloco-b-andberna28\myrep\.tko\cache\poo.md
-  cache_timestamp: '2025-10-20 19:59:41'
+  cache_timestamp: '2025-10-20 21:03:25'
   filters:
   - acesso
   - simples
@@ -22,6 +22,8 @@ tasks:
   poo@roupa: '{rate:100, alone:10, study:30}'
   poo@relogio: '{rate:100, human:amigo, alone:10, study:100}'
   poo@motoca: '{rate:100, alone:10, study:100}'
+  poo@motouber: '{rate:100, iagen:copilot, alone:8, study:70}'
+  poo@tamagotchi: '{rate:100, alone:9, study:80}'
 flags:
   quests: 0
   tracks: 0
@@ -29,4 +31,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@motouber
+selected: poo@tamagotchi
